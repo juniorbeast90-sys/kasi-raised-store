@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kasi Raised — Same roots. Bigger dreams. Independent South African streetwear.">
+<title>KASI RAISED® — Worn With Pride</title>
+<style>
+:root{--bg:#090909;--panel:#111;--white:#f5f5f5;--muted:#aaa;--line:#333}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:#090909ed;backdrop-filter:blur(12px);z-index:5}
+.logo{display:flex;align-items:center;text-decoration:none}.logo img{height:48px;width:58px;object-fit:contain;display:block}
+nav{display:flex;gap:24px;font-size:.82rem;text-transform:uppercase;letter-spacing:1px}nav a{text-decoration:none}
+.cart-btn,.outline,.solid{border:1px solid var(--white);padding:12px 16px;background:transparent;color:var(--white);text-transform:uppercase;font-size:.75rem;letter-spacing:1px}
+main{max-width:1240px;margin:auto;padding:0 5vw}.hero{min-height:560px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:60px 0}
+.eyebrow{color:var(--muted);letter-spacing:3px;text-transform:uppercase;font-size:.72rem}.hero h1{font-size:clamp(3.2rem,8vw,7.5rem);line-height:.86;letter-spacing:-.07em;margin:22px 0}.hero h1 em{font-style:normal;color:#888}.hero p{max-width:420px;line-height:1.7;color:#c4c4c4}.hero-art{min-height:400px;background:radial-gradient(ellipse at 50% 25%,#383838 0,#191919 40%,#101010 75%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid #292929}
+.hero-art:before{content:"KR";font-size:clamp(9rem,23vw,20rem);font-weight:900;letter-spacing:-.13em;color:#ffffff0c;position:absolute}
+.shirt{width:66%;max-width:360px;filter:drop-shadow(0 30px 20px #000);z-index:1}
+.section-head{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding:26px 0 18px;margin-top:32px}.section-head h2{font-size:clamp(1.7rem,4vw,3rem);letter-spacing:-.05em;margin:0}.section-head p{color:var(--muted);font-size:.8rem}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:25px 0 70px}
+.product{background:#111;border:1px solid #252525}.product-image{aspect-ratio:4/4.6;background:linear-gradient(145deg,#1d1d1d,#080808);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.product-image.white-bg{background:linear-gradient(145deg,#eee,#bbb)}
+.product-image svg{width:78%;max-height:92%;filter:drop-shadow(0 16px 10px #0008)}.product-info{padding:17px}.product-title{font-weight:800;text-transform:uppercase;letter-spacing:.4px}.product-sub{color:var(--muted);font-size:.8rem;margin:7px 0 14px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-weight:800}.add{background:var(--white);color:#080808;border:0;padding:11px 13px;font-weight:800;font-size:.72rem;text-transform:uppercase}
+.story{padding:65px 0;display:grid;grid-template-columns:1fr 1fr;gap:5vw;border-top:1px solid var(--line)}.story h2{font-size:clamp(2rem,5vw,4.5rem);letter-spacing:-.06em;line-height:.95;margin:12px 0}.story p{color:#bbb;line-height:1.8}
+footer{border-top:1px solid var(--line);padding:32px 5vw;display:flex;justify-content:space-between;gap:20px;color:#999;font-size:.75rem;letter-spacing:.5px}
+dialog{background:#111;color:#fff;border:1px solid #555;width:min(560px,94vw);padding:25px;max-height:90vh;overflow:auto}dialog::backdrop{background:#000b}.dialog-head{display:flex;justify-content:space-between;align-items:center}.close{background:none;color:white;border:0;font-size:1.6rem}
+#cartItems{margin:20px 0}.cart-line{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #333}.small{color:#aaa;font-size:.8rem;line-height:1.6}.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:.75rem;text-transform:uppercase;color:#bbb;letter-spacing:1px}.field input,.field select{width:100%;padding:12px;background:#080808;color:white;border:1px solid #444}.full{width:100%;margin-top:10px}.notice{background:#1c1c1c;border-left:3px solid #fff;padding:12px;margin:14px 0;font-size:.82rem;line-height:1.6}
+@media(max-width:760px){header{padding:0 4vw}nav{gap:12px;font-size:.68rem}.hero{grid-template-columns:1fr;padding:38px 0}.hero-art{min-height:320px}.products{grid-template-columns:repeat(2,1fr);gap:10px}.product-info{padding:12px}.price-row{align-items:start;flex-direction:column}.add{width:100%}.story{grid-template-columns:1fr;padding:42px 0}footer{flex-direction:column}nav a:nth-child(2){display:none}}
+@media(max-width:420px){.products{grid-template-columns:1fr 1fr}.logo img{height:38px;width:46px}.logo span{font-size:.85rem!important}.cart-btn{padding:9px}.hero h1{font-size:3.4rem}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#" aria-label="Kasi Raised home"><img src="kasi-raised-logo-transparent.png" alt="Kasi Raised KR logo"><span style="font-size:1rem;font-weight:900;letter-spacing:-1px;margin-left:8px">KASI RAISED®</span></a>
+  <nav><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#contact">Contact</a></nav>
+  <button class="cart-btn" onclick="openCart()">Bag (<span id="cartCount">0</span>)</button>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Independent streetwear · South Africa</div>
+      <h1>SAME ROOTS.<br><em>BIGGER</em><br>DREAMS.</h1>
+      <p>Born from the kasi. Built for the world. Everyday streetwear for those who wear their story with pride.</p>
+      <a href="#shop"><button class="solid" style="background:#fff;color:#000;margin-top:10px">Shop the collection ↗</button></a>
+    </div>
+    <div class="hero-art" aria-label="Kasi Raised shirt illustration">
+      <svg class="shirt" viewBox="0 0 300 330" role="img" aria-label="Black graphic T-shirt">
+        <path d="M92 24 L120 12 Q150 36 180 12 L208 24 L280 68 L245 126 L210 108 L210 306 Q150 322 90 306 L90 108 L55 126 L20 68 Z" fill="#080808" stroke="#555" stroke-width="2"/>
+        <path d="M120 13 Q150 58 180 13" fill="none" stroke="#444" stroke-width="3"/>
+        <text x="150" y="139" fill="#fff" font-size="19" font-weight="900" text-anchor="middle" letter-spacing="-1">WORN</text>
+        <text x="150" y="160" fill="#fff" font-size="19" font-weight="900" text-anchor="middle" letter-spacing="-1">WITH</text>
+        <text x="150" y="181" fill="#fff" font-size="19" font-weight="900" text-anchor="middle" letter-spacing="-1">PRIDE</text>
+        <path d="M111 195 L189 195" stroke="#fff" stroke-width="1"/>
+        <text x="150" y="211" fill="#ddd" font-size="8" font-weight="700" text-anchor="middle" letter-spacing="2">KASI RAISED</text>
+      </svg>
+    </div>
+  </section>
+  <section id="shop">
+    <div class="section-head"><div><div class="eyebrow">Drop 001</div><h2>THE COLLECTION</h2></div><p>Made to order · Small-batch mindset</p></div>
+    <div class="products" id="products"></div>
+  </section>
+  <section class="story" id="story">
+    <div><div class="eyebrow">Our roots. Our future.</div><h2>MORE THAN<br>A BRAND.</h2></div>
+    <div><p>Kasi Raised is about where you come from and where you're going. A reminder that your roots are part of your strength, and your dreams are yours to build.</p><p><strong>Same roots. Bigger dreams. Worn with pride.</strong></p></div>
+  </section>
+  <section id="contact" style="padding:25px 0 65px">
+    <div class="section-head"><div><div class="eyebrow">Need help?</div><h2>LET'S TALK.</h2></div></div>
+    <p class="small">Replace this placeholder with your business email and WhatsApp number before publishing.</p>
+  </section>
+</main>
+<footer><span>KASI RAISED® — WORN WITH PRIDE.</span><span>Independent streetwear · South Africa</span><span>© <span id="year"></span> KASI RAISED</span></footer>
+
+<dialog id="cartDialog">
+  <div class="dialog-head"><h2 style="margin:0">YOUR BAG</h2><button class="close" onclick="closeCart()" aria-label="Close">×</button></div>
+  <div id="cartItems"></div><div class="price-row"><strong>Subtotal</strong><strong id="subtotal">R0</strong></div>
+  <p class="small">Delivery is calculated/confirmed separately for now.</p>
+  <button class="solid full" onclick="showCheckout()">Continue to checkout</button>
+  <button class="outline full" onclick="closeCart()">Keep shopping</button>
+</dialog>
+<dialog id="checkoutDialog">
+  <div class="dialog-head"><h2 style="margin:0">CHECKOUT</h2><button class="close" onclick="closeCheckout()" aria-label="Close">×</button></div>
+  <div class="notice">Prototype checkout: this demo does not collect payment or transmit customer data. Connect a supported South African payment provider before accepting real orders.</div>
+  <form id="checkoutForm">
+    <div class="field"><label for="customerName">Full name</label><input id="customerName" required autocomplete="name"></div>
+    <div class="field"><label for="customerEmail">Email</label><input id="customerEmail" type="email" required autocomplete="email"></div>
+    <div class="field"><label for="customerPhone">Phone number</label><input id="customerPhone" type="tel" required autocomplete="tel"></div>
+    <div class="field"><label for="deliveryMethod">Delivery method</label><select id="deliveryMethod"><option>Courier delivery (quote required)</option><option>Local delivery (confirm availability)</option><option>Collection (arrange with seller)</option></select></div>
+    <div class="field"><label for="deliveryAddress">Delivery address / area</label><input id="deliveryAddress" required autocomplete="street-address"></div>
+    <div class="field"><label for="notes">Order notes (optional)</label><input id="notes" placeholder="e.g. size details or delivery instructions"></div>
+    <button class="solid full" type="submit">Review order details</button>
+  </form>
+  <p id="checkoutResult" class="small"></p>
+</dialog>
+<script>
+const products=[
+{id:1,name:"Worn With Pride Tee",desc:"Black · White graphic",price:250,color:"black",sizes:["S","M","L","XL","XXL"]},
+{id:2,name:"Same Roots Tee",desc:"Black · Statement print",price:250,color:"black",sizes:["S","M","L","XL","XXL"]},
+{id:3,name:"Kasi Raised Essential",desc:"White · Minimal logo",price:220,color:"white",sizes:["S","M","L","XL","XXL"]},
+{id:4,name:"Bigger Dreams Tee",desc:"Black · Back print",price:250,color:"black",sizes:["S","M","L","XL","XXL"]},
+{id:5,name:"KR25 Graphic Tee",desc:"White · Graphic print",price:250,color:"white",sizes:["S","M","L","XL","XXL"]},
+{id:6,name:"Kasi Raised Classic",desc:"Black · Logo print",price:220,color:"black",sizes:["S","M","L","XL","XXL"]}
+];
+let cart=[];
+function shirtSVG(color,id){let shirt=color==="white"?"#f1f1f1":"#080808",ink=color==="white"?"#111":"#fff";let words=[["WORN","WITH","PRIDE"],["SAME","ROOTS"],["KASI","RAISED"],["BIGGER","DREAMS"],["KR25"],["KASI","RAISED"]][id-1];return `<svg viewBox="0 0 300 330" role="img" aria-label="${color} T-shirt illustration"><path d="M92 24 L120 12 Q150 36 180 12 L208 24 L280 68 L245 126 L210 108 L210 306 Q150 322 90 306 L90 108 L55 126 L20 68 Z" fill="${shirt}" stroke="${color==="white"?"#888":"#555"}" stroke-width="2"/><path d="M120 13 Q150 58 180 13" fill="none" stroke="${color==="white"?"#aaa":"#444"}" stroke-width="3"/>${words.map((w,i)=>`<text x="150" y="${143+i*21}" fill="${ink}" font-size="${w.length>7?13:19}" font-weight="900" text-anchor="middle" letter-spacing="-1">${w}</text>`).join("")}</svg>`}
+function renderProducts(){document.getElementById("products").innerHTML=products.map(p=>`<article class="product"><div class="product-image ${p.color==="white"?"white-bg":""}">${shirtSVG(p.color,p.id)}</div><div class="product-info"><div class="product-title">${p.name}</div><div class="product-sub">${p.desc} · Made to order</div><div class="price-row"><span class="price">R${p.price}</span><button class="add" onclick="addToCart(${p.id})">Choose size +</button></div></div></article>`).join("")}
+function addToCart(id){let p=products.find(x=>x.id===id);let size=prompt(`Choose size for ${p.name}: S, M, L, XL or XXL`);if(!size)return;size=size.trim().toUpperCase();if(!p.sizes.includes(size)){alert("Please choose S, M, L, XL or XXL.");return}let found=cart.find(x=>x.id===id&&x.size===size);if(found)found.qty++;else cart.push({...p,size,qty:1});renderCart();document.getElementById("cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0)}
+function renderCart(){let el=document.getElementById("cartItems");if(!cart.length){el.innerHTML='<p class="small">Your bag is empty. Add a product to get started.</p>'}else{el.innerHTML=cart.map((x,i)=>`<div class="cart-line"><div><strong>${x.name}</strong><div class="small">Size ${x.size} · Qty ${x.qty}</div><button class="outline" style="padding:5px 8px;margin-top:8px" onclick="removeItem(${i})">Remove</button></div><strong>R${x.price*x.qty}</strong></div>`).join("")}document.getElementById("subtotal").textContent="R"+cart.reduce((s,x)=>s+x.price*x.qty,0)}
+function removeItem(i){cart.splice(i,1);renderCart();document.getElementById("cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0)}
+function openCart(){renderCart();document.getElementById("cartDialog").showModal()}function closeCart(){document.getElementById("cartDialog").close()}
+function showCheckout(){if(!cart.length){alert("Your bag is empty.");return}closeCart();document.getElementById("checkoutDialog").showModal()}
+function closeCheckout(){document.getElementById("checkoutDialog").close()}
+document.getElementById("checkoutForm").addEventListener("submit",e=>{e.preventDefault();let items=cart.map(x=>`${x.name} / ${x.size} x${x.qty} = R${x.price*x.qty}`).join("\n");let total=cart.reduce((s,x)=>s+x.price*x.qty,0);let details=`KASI RAISED — ORDER REQUEST\nName: ${document.getElementById("customerName").value}\nEmail: ${document.getElementById("customerEmail").value}\nPhone: ${document.getElementById("customerPhone").value}\nDelivery: ${document.getElementById("deliveryMethod").value}\nAddress/area: ${document.getElementById("deliveryAddress").value}\nNotes: ${document.getElementById("notes").value}\n\n${items}\nSubtotal: R${total}\n\nThis is a demo order only. Payment has NOT been taken.`;document.getElementById("checkoutResult").textContent=details;});
+document.getElementById("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+</script>
+</body>
+</html>
